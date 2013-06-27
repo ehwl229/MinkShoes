@@ -1,0 +1,84 @@
+<%= render "shared/nav_form" %>
+        <ul class="header_customize"> 
+          <li><%= link_to "Continue Shopping", root_path, class: "home_button" %> </li>
+        </ul>
+       <div id="inside">
+            <div id="wrap">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>ENTER YOUR SHOE SIZE</legend>
+                            <p id="countryselect">
+                                <label for="country"> Country </label>
+                                <input id="us" type="radio" name="country" value="US" checked="checked" /> 
+                                <strong> US </strong>
+                            </p>
+
+                            <p id="usize">
+                                <label for="ussize">US Size</label>
+                                <select name="ussize">
+                                  <option value="7">7</option>
+                                  <option value="7.5">7.5</option>
+                                  <option value="8">8</option>
+                                  <option value="8.5">8.5</option>
+                                  <option value="9">9.5</option>
+                                  <option value="10">10</option>
+                                  <option value="10.5">10.5</option>
+                                  <option value="11">11</option>
+                                  <option value="11.5">11.5</option>
+                                  <option value="12">12</option>
+                                  <option value="12.5">12.5</option>
+                                  <option value="13">13</option>
+                                  <option value="13.5">13.5</option>
+                                  <option value="14">14</option>
+                                </select>
+                            </p>
+                            
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>ENTER YOUR FEET'S WIDTH</legend>
+                            <iframe width="470" height="264" src="http://www.youtube.com/embed/wH5BkiCwSL0" frameborder="0" allowfullscreen></iframe>
+                            <p>
+                                <input id="width" name="width" type="text" placeholder="Width (cm) "/>
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend> ENTER YOUR FEET'S LENGTH</legend>
+                           <iframe width="470" height="264" src="http://www.youtube.com/embed/i2gQZUvA_20" frameborder="0" allowfullscreen></iframe>
+                            <p>
+                                <input id="length" name="width" type="text" placeholder="Length (cm) " />
+                            </p>
+
+                        </fieldset>
+
+                        <fieldset class="step">
+                        <legend>SUBMIT ORDER</legend>
+                        <p>
+
+                          Thank you for taking the time to enter your feet measurements. Your measurements will be stored in our archive.
+                        </p>
+                            <p class="submit">
+                                <a href="#shoppingcart" data-toggle="modal" class="home_button"> Add To Cart </a>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Shoe Size</a>
+                        </li>
+                        <li>
+                            <a href="#">Feet Width</a>
+                        </li>
+                        <li>
+                            <a href="#">Feet Length</a>
+                        </li>
+                        <li>
+                            <a href="#">Submit</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>

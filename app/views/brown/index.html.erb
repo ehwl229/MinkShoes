@@ -1,0 +1,38 @@
+<%= render "shared/nav_form" %>
+      <div class="product_container">
+        <div class="product_content">
+            <span class='zoom' id='ex1'>
+                <img src='/assets/brownoxford_big.jpg' width='450' alt='Brown Oxford'/>
+            </span>
+            <div class="product_des">
+                  <br>
+                  <p> Description: A classic Oxford with a traditional but delicate toe punch design, as well as decorative punching on the vamp and quarters. </p>
+                  <br>
+                  <p> Leather & Color: Dark Brown Misty Calf</p>
+            </div>
+         </div>
+        <div class="product_shop">
+              <h2 class="product_title"> Philip II</h2>
+              <p class="product_price"> $300 </p>
+              <p align="center"> <%= link_to "CUSTOMIZE NOW", customize_path, class: "customize_button" %> </p>
+        </div>
+        <div class="product_other">
+              <hr class="divider">
+              <h2 class="suggestion"> you might also like </h2>
+              <ul class="other">
+                <li>
+                      <a href="black.html">
+                          <img src="/assets/blackoxford_1.png" width="300"> 
+                          <figcaption class="fig"> City II </figcaption>
+                      </a>
+                </li>
+
+                <li>
+                      <a href="monk.html">
+                        <img src="/assets/buckles_1.png" width="300">
+                         <figcaption class="fig"> Chapel </figcaption>
+                      </a>
+                </li>
+              </ul>
+        </div>
+      </div>

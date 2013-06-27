@@ -1,0 +1,36 @@
+<%= render "/shared/nav_form" %>
+<div class="form">
+  <h1 class="form_head"> SIGN UP </h1>
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      </div>
+
+      <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      </div>
+
+      <div class="field">
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      </div>
+
+      <div class="field">
+      <%= f.label :password_confirmation, "Password Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+      </div>
+
+      <div class="field">
+      <%= f.label :avatar, "Profile Picture" %> 
+      <%= f.file_field :avatar %>
+      </div>
+
+      <div class="action">
+      <%= f.submit "SIGN UP", class: "home_button" %>
+      </div>
+    <% end %>
+  </div>
+</div>

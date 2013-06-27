@@ -1,0 +1,28 @@
+<%= render "/shared/nav_form" %>
+<div class="form">
+  <h1 class="form_head"> SIGN IN </h1>
+    <%= form_for(:session, url: sessions_path) do |f| %>
+      <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <div id="error_explanation">
+      <%= @message %>
+      </div><br>
+      <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      </div>
+
+      <div class="field">
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      </div>
+
+      <div class="action">
+      <%= f.submit "LOG IN", class: "home_button" %>
+      </div>
+
+      <p class="register"> No account? <%= link_to "Register Now!", signup_path, class: "register_now" %></p>
+    <% end %>
+  </div>
+</div>

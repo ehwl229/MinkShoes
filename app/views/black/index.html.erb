@@ -1,0 +1,38 @@
+<%= render "shared/nav_form" %>
+      <div class="product_container">
+          <div class="product_content">
+            <span class='zoom' id='ex1'>
+                <img src='/assets/blackoxford_big.jpg' width='450' alt='Black Oxford'/>
+            </span>
+            <div class="product_des">
+                    <br>
+                    <p> Description: With its hand-beveled waist, fine punching on the toe cap and rounded soles, the City II has many of the bespoke elements that characterise the Prestige collection. </p>
+                    <br>
+                    <p> Leather &amp Color: Black Oxford Calf</p>
+            </div>
+          </div>
+          <div class="product_shop">
+                  <h2 class="product_title"> City II</h2>
+                  <p class="product_price"> $300 </p>
+                  <p align="center"><%= link_to "CUSTOMIZE NOW", customize_path, class: "customize_button" %></p>
+          </div>
+          <div class="product_other">
+                <hr class="divider">
+                <h2 class="suggestion"> you might also like </h2>
+                <ul class="other">
+                  <li>
+                        <a href="brown.html">
+                            <img src="/assets/brownoxford_1.png" width="300"> 
+                            <figcaption class="fig"> Philip II </figcaption>
+                        </a>
+                  </li>
+
+                  <li>
+                        <a href="monk.html">
+                          <img src="/assets/buckles_1.png" width="300">
+                           <figcaption class="fig"> Chapel </figcaption>
+                        </a>
+                  </li>
+                </ul>
+          </div>
+      </div>

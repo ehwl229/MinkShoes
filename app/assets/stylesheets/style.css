@@ -1,0 +1,639 @@
+/*
+Mink: Made-To-Measure Shoes Website
+Author: Eric Lee
+Final Project for General Assembly: Front-End & Ruby on Rails 
+*/
+
+
+/*Global Style */
+
+body {
+	
+	font-family:'Helvetica','Arial';
+	background-color: #F2F2F0;
+	width: 1152px;
+	margin: 0 auto;
+}
+
+
+#thankyou{
+	margin-top: 125px;
+}
+
+
+/* Top Navigation */
+.navbar .navbar-inverse .navbar-fixed-top {
+	top: 0;
+	left: 0;
+}
+
+.navbar-inner {
+	width: 1280px;
+
+}
+
+li.nav_brand {
+	font-weight: bold;
+	font-size: 20px
+}
+
+
+.navbar-inverse .nav>li>a.selected  {
+	color: #fff;
+}
+
+#login {
+	float: right;
+}
+
+.nav li a {
+	outline: none;
+}
+
+p.footer_left {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+p.footer_right {
+	float: right;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+
+/*----------Home Page--------*/
+
+
+.home_content{
+	background-image: url("/assets/blackoxford_1.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 400px;
+}
+
+.content_home{
+	margin-left: 100px;
+	padding-top: 75px;
+}
+
+h1.home_header {
+	color: #1b1b1b;
+	font-size: 20px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+a.home_button {
+	color: black;
+	font-size: 15px;
+	color: #F3F3F0;
+	background-color: #554E3E;
+	border: 10px solid #554E3E;
+}
+a.home_button:hover{
+	text-decoration: none;
+	color: #FFF;
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+}
+
+#bottom_wrapper, #top_wrapper{
+	
+	width: 1152px;
+	margin: 0 auto;
+}
+
+
+
+img.align-center {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+
+img.medium {
+	width: 200px;
+}
+
+img.high{
+	width: 100%
+}
+
+
+
+/*----------------Collection Page ---------------------*/
+
+
+/*Main Content*/
+
+.collection {
+	width: 1152px;
+	margin: 0 auto;
+
+}
+.collection_content {
+	background-image: url("/assets/blackoxford_2.png");
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0;
+
+}
+.collection_content_1{
+	background-image: url("/assets/buckles_3.png");
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0;
+
+}
+.collection_content_2{
+	background-image: url("/assets/brownoxford_2.png");
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0;
+
+} 
+h1.collection_header {
+	text-align: center;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	padding-top: 100px
+}
+
+.collection_font {
+	text-align: center;
+}
+
+
+/* Product Image Hover Effects */
+
+.view {
+	width: 775px;
+	height: 330px;
+	margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+
+}
+.view .mask,.view .content {
+   width: 775px;
+   height: 330px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 25px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 10px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 20px;
+   position: relative;
+   color: #fff;
+   
+   text-align: center;
+   margin-top: 50px
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   margin-top: 7.5px;
+   padding: 7px 14px;
+   background: #554E3E;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 15px
+
+}
+.view a.info:hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+
+
+.view img {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.view .mask {
+   background-color: rgba(224,224,224,0.3);
+   -webkit-transform: translateX(-800px);
+   -moz-transform: translateX(-800px);
+   -o-transform: translateX(-800px);
+   -ms-transform: translateX(-800px);
+   transform: translateX(-800px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.view h2 {
+   background: rgba(0, 0, 0, 0.8);
+   color: #fff;
+}
+
+.view p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   color: #000;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+
+
+.view:hover .mask {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+
+
+.view:hover img {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+   opacity: 0.5;
+}
+
+
+.view:hover p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+
+
+/*------Product Page ------------------------------------*/
+
+/* Product Zoom Setting */
+
+.product_container {
+	width: 1152px;
+	margin: 0 auto;
+
+}
+
+.product_content {
+	float: left;
+	width: 550px;
+	margin-top: 100px;
+
+}
+
+.product_shop {
+	float: right;
+	width: 600px;
+	margin-top: 100px;
+}
+
+h2.product_title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.product_des {
+	width: 460px;
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+p.product_price {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 25px;
+}
+
+a.customize_button {
+	color: black;
+	font-size: 15px;
+	color: #F3F3F0;
+	background-color: #554E3E;
+	border: 10px solid #554E3E;
+}
+a.customize_button:hover{
+	text-decoration: none;
+	color: #FFF;
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+}
+
+
+.product_other {
+	clear: left;
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul.other li {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 25px;
+}
+
+h2.suggestion {
+	font-size: 25px;
+	text-align: center;
+	font-weight: normal;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+
+.fig {
+	text-align: center;
+	color: #333;
+}
+
+ul.other li a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+ul.other li.right_indent {
+	margin-left: 230px;
+}
+
+.zoom {
+	display:inline-block;
+	position: relative;
+}
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+
+
+/*-----------About Page ---------------------------------*/
+
+
+.about_container {
+	width: 1152px;
+	margin: 0 auto;
+}
+
+.about_content {
+	background-image: url("/assets/shoemaker.png");
+	height: 325px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	width: 1152px;
+
+}
+
+h1.about_header {
+	text-align: center;
+	color: #FFF;
+	padding-top: 115px; 
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+h2.about {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 10px;
+	margin-bottom: 7.5px;
+	margin-top: 5px;
+}	
+
+/* Login Modal */
+
+.modal {
+	width: 400px;
+	margin-left: -190px;
+	background-color: #F2F2F0
+
+}
+
+.modal-header {
+	text-align: center;
+}
+
+h3.title_modal {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+label {
+	text-align: center;
+}
+
+input, textarea, .uneditable-input {
+	margin-left: 75px;
+	text-align: center;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+/* Shopping Cart Modal */
+
+td.r{
+	width: 100px;
+}
+
+
+td.c {
+	width: 100px;
+	text-align: center;
+}
+td.c p {
+	text-align: center;
+}
+
+
+/*------------- Customize Page --------------------------*/
+
+
+.header_customize {
+	margin-top: 50px;
+}
+
+.header_customize h5{
+	color: #554E3E;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.header_customize h5 a {
+	text-decoration: none;
+}
+
+#steps form p {
+	margin-left: 85px;
+}
+
+#steps form p label {
+	text-align: center;
+	margin-right: 1px;
+}
+
+
+
+#navigation ul li { 
+	margin: 0px 15px;
+}
+
+#steps form button {
+	background: rgb(87, 84, 84);
+}
+
+/*--------------- CheckOut ------------------*/
+
+.checkout{
+	width: 1152px;
+	margin: 0 auto;
+	margin-top: 50px
+}
+
+.message {
+	text-align: center;	
+}
+
+.message h1 {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.message p {
+	margin-bottom: 30px;
+
+}
+.shippinginfo {
+	float: left;
+}
+
+.shippinginfo label {
+	text-align: left;
+}
+.shippinginfo input {
+	margin-left: -5px;
+}
+
+.paymentinfo label {
+	text-align: left;
+}
+.paymentinfo input {
+	margin-left: -5px;
+}
+
+#billinginfo label {
+	text-align: left;
+}
+#billinginfo input {
+	margin-left: -5px;
+}
+
+.shippinginfo h5, .paymentinfo h5, #billinginfo h5 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.checkout_item {
+	float: right;
+	width: 550px;
+	border: solid 2px;
+	margin-top: 40px;
+
+}
+	.item_img {
+		margin-top: 10px;
+		width: 300px;
+
+	}
+	ul.item_check {
+		text-align: left;
+		float: right;
+		margin-right: 50px;
+		margin-top: 17px;
+
+	}
+
+	ul.item_check li.checked_item{
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+.paymentinfo {
+	clear: left;
+}
+.filler_info {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px
+}
+
+a.order {
+	color: black;
+	font-size: 15px;
+	color: #F3F3F0;
+	background-color: #554E3E;
+	border: 10px solid #554E3E;
+}
+a.order:hover{
+	text-decoration: none;
+	color: #FFF;
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+}
+.thanks {
+	padding: 5px;
+	background-color: #333;
+	color: #FFF;
+}

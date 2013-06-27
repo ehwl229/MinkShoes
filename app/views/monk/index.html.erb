@@ -1,0 +1,38 @@
+<%= render "/shared/nav_form" %>
+      <div class="product_container">
+        <div class="product_content">
+            <span class='zoom' id='ex1'>
+                <img src='/assets/buckles_big.jpg' width='450' alt='Brown Monk Strap'/>
+            </span>
+            <div class="product_des">
+                      <br>
+                      <p> Description: The Chapel is fashioned from a single piece of leather with no back seam, parallel buckles, squared toe and sweeping lines. </p>
+                      <br>
+                      <p> Leather & Color: Black Museum Calf</p>
+            </div>
+        </div>
+            <div class="product_shop">
+                      <h2 class="product_title"> Chapel</h2>
+                      <p class="product_price"> $300 </p>
+                      <p align="center"><%= link_to "CUSTOMIZE NOW", customize_path, class: "customize_button" %> </p>
+            </div>
+
+        <div class="product_other">
+          <hr class="divider">
+          <h2 class="suggestion"> you might also like </h2>
+          <ul class="other">
+            <li>
+                  <a href="black.html">
+                      <img src="/assets/blackoxford_1.png" width="300"> 
+                      <figcaption class="fig"> City II </figcaption>
+                  </a>
+            </li>
+
+            <li>
+                  <a href="brown.html">
+                    <img src="/assets/brownoxford_1.png" width="300">
+                     <figcaption class="fig"> Phillip II  </figcaption>
+                  </a>
+            </li>
+        </div>
+      </div>

@@ -1,0 +1,15 @@
+<%= render "/shared/nav_form" %>
+<br><br><br><br>
+<div class="row">
+  <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= image_tag @user.avatar.url(:medium) %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>

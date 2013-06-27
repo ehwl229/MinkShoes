@@ -1,0 +1,37 @@
+      <!-- Shopping Cart Modal -->
+       <div id="shoppingcart" class="modal hide fade">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="title_modal">YOUR CART</h3>
+              </div>
+              <div class="modal-body">
+                <form id="shoppingcart" name="frmModal" method="post">
+                  <table>
+                     <tbody>
+                      <tr>
+
+                        <td class="c">
+                          <p> Brown Oxford</p>
+                        </td>
+                        </td>
+
+                        <td class="c">
+                          <p> 1 </p>
+                        </td>
+
+                        <td class="c">
+                          <p> $300 </p>
+                        </td>
+
+                        <td class="c">
+                          <a href="#"> Remove</a>
+                        </td>
+                      </tr>
+                     </tbody> 
+                    </table>
+                 </form>
+              </div>
+              <div class="modal-footer">
+                  <%= link_to "Check Out", checkout_path, class: "home_button" %>
+              </div>
+         </div>

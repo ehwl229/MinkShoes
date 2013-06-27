@@ -1,0 +1,22 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li class="nav_brand"> <%= link_to "MINK", root_path, class: "selected" %></li>
+            <li><%= link_to "COLLECTION", collection_path%></li>
+            <li><%= link_to "ABOUT", about_path %></li>
+        </ul>
+        <% if signed_in? %>
+            <ul id="login" class="nav">
+                <li><%= link_to "PROFILE", user_path(current_user) %></li>
+                <li><%= link_to "SETTINGS", '#' %></li>
+                <li><%= link_to "SIGN OUT", signout_path, method: "delete" %></li>
+                <li> <a href="#shoppingcart" role="button" data-toggle="modal"> SHOPPING CART </a></li>
+            </ul>
+        <% else %>
+            <ul id="login" class="nav">
+                <li><%= link_to "SIGN OUT", signout_path, method: "delete" %></li>
+                <li> <a href="#shoppingcart" role="button" data-toggle="modal"> SHOPPING CART </a></li>
+            </ul>
+        <% end %>
+    </div>
+</div>

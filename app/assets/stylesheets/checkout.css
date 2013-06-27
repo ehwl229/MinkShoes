@@ -1,0 +1,92 @@
+body {
+	font-family:'Helvetica','Arial';
+	background-color: #F2F2F0;
+
+}
+
+.checkout{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px
+}
+
+p.footer_left {
+	float: left;
+	font-size: 20px;
+}
+p.footer_right {
+	float: right;
+}
+
+#login {
+	float: right;
+}
+
+.nav li a {
+	outline: none;
+}
+
+.navbar-inverse .brand {
+	font-weight: bold;
+	color: white;
+}
+
+.message {
+	text-align: center;
+}
+
+.shippinginfo {
+	float: left;
+}
+
+.shippinginfo label {
+	text-align: left;
+}
+
+.checkout_item {
+	float: right;
+	width: 530px;
+	border: solid 2px;
+	display: block;
+	margin-top: 40px;
+
+}
+	.item_img {
+		margin-top: 10px;
+		width: 300px;
+
+	}
+	.item_check {
+		text-align: center;
+		float: right;
+		margin-right: 50px;
+		margin-top: 15px;
+
+	}
+
+.paymentinfo {
+	clear: left;
+}
+.filler_info {
+	margin-top: 100px;
+	margin-left: 10px auto;
+}
+
+a.order {
+	color: black;
+	font-size: 15px;
+	color: #F3F3F0;
+	background-color: #554E3E;
+	border: 10px solid #554E3E;
+}
+a.order:hover{
+	text-decoration: none;
+	color: #FFF;
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+}
+.thanks {
+	padding: 5px;
+	background-color: #333;
+	color: #FFF;
+}
