@@ -6,7 +6,7 @@ Author: Eric Lee Created: June 2013
 
 Final Project For General Assembly, Front End Development and Ruby & Ruby On Rails Course.
 
-Project Description: An eCommerce website that allows users to customize leather shoes by measuring and submiting their feet measurements online. The website has full stack of front and back-end capabilities.
+Project Description: An eCommerce website that allows users to customize leather shoes by measuring and submiting their feet measurements online.
 
 Built On: 
    Rails 3.2
